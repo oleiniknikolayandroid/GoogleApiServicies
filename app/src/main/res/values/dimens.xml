@@ -1,0 +1,11 @@
+
+<resources>
+    <dimen name="indentation_0">0dp</dimen>
+    <dimen name="indentation_8">8dp</dimen>
+    <dimen name="indentation_16">16dp</dimen>
+    <dimen name="indentation_32">32dp</dimen>
+    <dimen name="view_param_150">150dp</dimen>
+    <dimen name="txt_size_20">20sp</dimen>
+    <dimen name="txt_size_18">18sp</dimen>
+    <dimen name="view_param_0dp">0dp</dimen>
+</resources>

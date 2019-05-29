@@ -1,0 +1,54 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="android.view.View"/>
+        <import type="com.example.googleapiservicies.presentation.activities.auth.AuthActivity" />
+        <variable
+            name="handler"
+            type="com.example.googleapiservicies.presentation.fragments.GoogleFragment" />
+        <variable
+            name="user"
+            type="com.example.googleapiservicies.model.User" />
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.googleapiservicies.presentation.fragments.GoogleFragment">
+        <!--ToDo get logic picasso from anketa-->
+        <!-- TODO: show auth data from google -->
+
+        <TextView
+            android:id="@+id/txtGoogleName"
+            android:layout_width="@dimen/indentation_0"
+            android:layout_height="wrap_content"
+            android:text="@{user.getmName() + user.getnSurnme()}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtGoogleEmail"
+            android:layout_width="@dimen/indentation_0"
+            android:layout_height="wrap_content"
+            android:text="@{user.getmEmail()}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtGoogleName" />
+
+        <Button
+            android:id="@+id/btnGoogleReturn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/indentation_16"
+            android:layout_marginBottom="@dimen/indentation_16"
+            android:onClick="@{() ->handler.googleReturn()}"
+            android:text="@string/google_return"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+</layout>

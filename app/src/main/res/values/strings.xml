@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">GoogleApiServicies</string>
+    <string name="google_key">AIzaSyCou6q8CNneslrEDfgWS9UkymdP3so51zo</string>
+    <string name="facebook_app_id">476451252894518</string>
+    <string name="fb_login_protocol_scheme">fb476451252894518</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="nav_choose_auth_with_google">choose auth with google</string>
+    <string name="nav_choose_auth_with_facebook">choose auth with facebook</string>
+    <string name="google_return">Return</string>
+    <string name="facebook_return">Return</string>
+
+</resources>

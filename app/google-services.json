@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "640597628710",
+    "firebase_url": "https://modular-shard-240016.firebaseio.com",
+    "project_id": "modular-shard-240016",
+    "storage_bucket": "modular-shard-240016.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:640597628710:android:67b0c602bad8330e",
+        "android_client_info": {
+          "package_name": "com.obscura"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "640597628710-eoc8ho2s8ngq5ehbndpdhvbfbmtd7o72.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.obscura",
+            "certificate_hash": "a241e7d085542347accecc23194209bdcc9e441a"
+          }
+        },
+        {
+          "client_id": "640597628710-5m81lea79k5e3be4ci0m3hmoanr66u24.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAz8rQNOg-b98fhaoP0IFmLhtswe9Nzqa0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "640597628710-5m81lea79k5e3be4ci0m3hmoanr66u24.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

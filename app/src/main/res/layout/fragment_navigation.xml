@@ -1,0 +1,46 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+        <import type="com.example.googleapiservicies.presentation.activities.auth.AuthContract" />
+        <variable
+            name="handler"
+            type="com.example.googleapiservicies.presentation.fragments.NavigationFragment" />
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.googleapiservicies.presentation.fragments.NavigationFragment">
+
+        <Button
+            android:id="@+id/btn_nav_auth_google"
+            android:layout_width="@dimen/indentation_0"
+            android:layout_height="wrap_content"
+            android:text="@string/nav_choose_auth_with_google"
+            android:onClick="@{()->handler.getOpenFragment(AuthContract.AuthFlow.GOOGLE)}"
+            app:layout_constraintBottom_toTopOf="@+id/nav_center_guideline"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btn_nav_auth_facebook"
+            android:layout_width="@dimen/indentation_0"
+            android:layout_height="wrap_content"
+            android:text="@string/nav_choose_auth_with_facebook"
+            android:onClick="@{()->handler.getOpenFragment(AuthContract.AuthFlow.FACEBOOK)}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nav_center_guideline" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/nav_center_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.5" />
+    </android.support.constraint.ConstraintLayout>
+</layout>
