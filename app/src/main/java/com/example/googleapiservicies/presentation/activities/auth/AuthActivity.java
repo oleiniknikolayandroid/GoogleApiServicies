@@ -53,7 +53,7 @@ public class AuthActivity extends AppCompatActivity implements AuthContract.Auth
     private AuthPagerAdapter mAuthAdapter;
     ViewPager mPager;
 
-    static final int PAGE_COUNT = 3;
+    //static final int PAGE_COUNT = 3;
     @Override
     protected void onStart() {
         super.onStart();
@@ -212,7 +212,7 @@ public class AuthActivity extends AppCompatActivity implements AuthContract.Auth
                 getOpenScreen(GoogleFragment.newInstance());
                 break;
             case DEFAULT:
-                getOpenScreen(NavigationFragment.newInstance());
+                getSupportFragmentManager().popBackStack();
                 break;
         }
     }
